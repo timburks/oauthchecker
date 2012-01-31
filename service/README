@@ -1,0 +1,7 @@
+
+This is a simple service for testing OAuth support in Google App Engine.
+
+It is configured to run at http://oauthchecker.appspot.com
+
+- Tim Burks (tim@radtastical.com)
+

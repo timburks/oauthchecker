@@ -1,0 +1,22 @@
+oauthchecker
+
+This is a test service and client for verifying OAuth support in Google App Engine.
+
+Currently it DOES NOT WORK. I am posting it as a starting point for debugging.
+
+The service is a simple Google App Engine app which is configured to run at 
+http://oauthchecker.appspot.com
+
+The client is a python script that requires Joe Stump's Python OAuth library
+(https://github.com/simplegeo/python-oauth2).
+
+With the service running, it should be possible to run the client script to 
+get an OAuth token which can then be used to properly call the App Engine service.
+
+But currently, this final request fails:
+{'status': '200', 'content-length': '36', 'content-location': u'https://oauthchecker.appspot.com/?oauth_body_hash=2jmj7l5rSw0yVb%2FvlWAYkK%2FYBwk%3D&oauth_nonce=68199343&oauth_timestamp=1328043069&oauth_consumer_key=anonymous&oauth_signature_method=HMAC-SHA1&oauth_version=1.0&oauth_token=1%2F8GcimVmpiY2zisiUn_aEhuPfL9PxEEmb3HFOSygOc7c&oauth_signature=7Q%2Byy1%2BF7sdV4GrpixKJC0hTvQo%3D', 'expires': 'Fri, 01 Jan 1990 00:00:00 GMT', 'vary': 'Accept-Encoding', 'server': 'Google Frontend', '-content-encoding': 'gzip', 'cache-control': 'no-cache', 'date': 'Tue, 31 Jan 2012 20:51:07 GMT', 'content-type': 'text/html; charset=utf-8'}
+Invalid OAuth parameters.
+
+Tim Burks
+tim@radtastical.com
+Jan 31, 2012
