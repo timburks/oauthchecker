@@ -4,6 +4,8 @@ This is a test service and client for verifying OAuth support in Google App Engi
 
 Currently it DOES NOT WORK. I am posting it as a starting point for debugging.
 
+For reference, a related discussion is at http://groups.google.com/group/google-appengine/browse_thread/thread/6cf5abaf4c776200/a1ef60712ba6e255?hl=en#a1ef60712ba6e255
+
 The service is a simple Google App Engine app which is configured to run at 
 http://oauthchecker.appspot.com
 
